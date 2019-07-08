@@ -1,4 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache openssl
+RUN apk update
+RUN apk upgrade
 COPY src/mkroot.sh /tmp/
 COPY src/root.cnf /tmp/
